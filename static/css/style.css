@@ -1,516 +1,514 @@
 /* Reseteo de estilos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { /* Selecciona todos los elementos */
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir padding y borde en el ancho y alto total */
 }
-
 
 /* styles.css */
-:root {
-    --primary: #2563EB;
-    --primary-light: #3B82F6;
-    --secondary: #10B981;
-    --dark: #1F2937;
-    --light: #F9FAFB;
-    --gray: #6B7280;
-    --light-gray: #E5E7EB;
-    --white: #FFFFFF;
-    --radius: 8px;
-    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+:root { /* Define variables CSS en el elemento raíz */
+    --primary: #2563EB; /* Color primario */
+    --primary-light: #3B82F6; /* Color primario claro */
+    --secondary: #10B981; /* Color secundario */
+    --dark: #1F2937; /* Color oscuro */
+    --light: #F9FAFB; /* Color claro */
+    --gray: #6B7280; /* Color gris */
+    --light-gray: #E5E7EB; /* Color gris claro */
+    --white: #FFFFFF; /* Color blanco */
+    --radius: 8px; /* Radio de borde para esquinas redondeadas */
+    --shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Sombra para elementos */
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* { /* Selecciona todos los elementos nuevamente */
+    margin: 0; /* Elimina el margen por defecto de todos los elementos */
+    padding: 0; /* Elimina el padding por defecto de todos los elementos */
+    box-sizing: border-box; /* Cambia el modelo de caja para incluir padding y borde en el ancho y alto total */
 }
 
-body {
-    font-family: 'Inter', sans-serif;
-    color: var(--dark);
-    line-height: 1.6;
-    background-color: var(--white);
+body { /* Estilos para el elemento body */
+    font-family: 'Inter', sans-serif; /* Establece la fuente principal del documento */
+    color: var(--dark); /* Establece el color del texto usando la variable de color oscuro */
+    line-height: 1.6; /* Establece la altura de línea para mejorar la legibilidad */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
 }
 
 /* Tipografía */
 h1,
 h2,
 h3,
-h4 {
-    font-weight: 700;
-    line-height: 1.2;
+h4 { /* Selecciona los encabezados h1, h2, h3 y h4 */
+    font-weight: 700; /* Establece el peso de la fuente a 700 (negrita) */
+    line-height: 1.2; /* Establece la altura de línea para los encabezados */
 }
 
-h1 {
-    font-size: 2.5rem;
+h1 { /* Estilos específicos para h1 */
+    font-size: 2.5rem; /* Establece el tamaño de fuente a 2.5 rem */
 }
 
-h2 {
-    font-size: 2rem;
+h2 { /* Estilos específicos para h2 */
+    font-size: 2rem; /* Establece el tamaño de fuente a 2 rem */
 }
 
-h3 {
-    font-size: 1.5rem;
+h3 { /* Estilos específicos para h3 */
+    font-size: 1.5rem; /* Establece el tamaño de fuente a 1.5 rem */
 }
 
-h4 {
-    font-size: 1.25rem;
+h4 { /* Estilos específicos para h4 */
+    font-size: 1.25rem; /* Establece el tamaño de fuente a 1.25 rem */
 }
 
-.subtitle {
-    color: var(--gray);
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.subtitle { /* Estilos para la clase "subtitle" */
+    color: var(--gray); /* Establece el color del texto usando la variable de color gris */
+    font-size: 1.1rem; /* Establece el tamaño de fuente a 1.1 rem */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 2rem; /* Establece un margen inferior de 2 rem */
 }
 
 /* Layout */
-.section {
-    padding: 5rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.section { /* Estilos para la clase "section" */
+    padding: 5rem 1.5rem; /* Establece un padding de 5 rem arriba y abajo, y 1.5 rem a los lados */
+    max-width: 1200px; /* Establece un ancho máximo de 1200 píxeles */
+    margin: 0 auto; /* Centra la sección horizontalmente */
 }
 
-.section-header {
-    text-align: center;
-    margin-bottom: 3rem;
+.section-header { /* Estilos para la clase "section-header" */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 3rem; /* Establece un margen inferior de 3 rem */
 }
 
-.bg-light {
-    background-color: var(--light);
+.bg-light { /* Estilos para la clase "bg-light" */
+    background-color: var(--light); /* Establece el color de fondo usando la variable de color claro */
 }
 
 /* Navegación */
-.nav {
-    background-color: var(--white);
-    box-shadow: var(--shadow);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+.nav { /* Estilos para la clase "nav" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
+    position: sticky; /* Hace que la barra de navegación se mantenga en la parte superior al hacer scroll */
+    top: 0; /* Posiciona la barra de navegación en la parte superior */
+    z-index: 100; /* Establece el índice z para que esté por encima de otros elementos */
 }
 
-.nav-inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem;
-    max-width: 1200px;
-    margin: 0 auto;
+.nav-inner { /* Estilos para la clase "nav-inner" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    justify-content: space-between; /* Espacia los elementos hijos de manera uniforme */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    padding: 1rem 1.5rem; /* Establece un padding de 1 rem arriba y abajo, y 1.5 rem a los lados */
+    max-width: 1200px; /* Establece un ancho máximo de 1200 píxeles */
+    margin: 0 auto; /* Centra la barra de navegación horizontalmente */
 }
 
-.brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
+.brand { /* Estilos para la clase "brand" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    gap: 0.75rem; /* Establece un espacio de 0.75 rem entre los elementos hijos */
 }
 
-.logo {
-    width: 2.5rem;
-    height: 2.5rem;
-    border-radius: var(--radius);
-    background-color: var(--primary);
-    color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-size: 1.25rem;
+.logo { /* Estilos para la clase "logo" */
+    width: 2.5rem; /* Establece un ancho de 2.5 rem */
+    height: 2.5rem; /* Establece una altura de 2.5 rem */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    background-color: var(--primary); /* Establece el color de fondo usando la variable de color primario */
+    color: var(--white); /* Establece el color del texto usando la variable de color blanco */
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    justify-content: center; /* Centra los elementos hijos horizontalmente */
+    font-weight: bold; /* Establece el peso de la fuente a bold */
+    font-size: 1.25rem; /* Establece el tamaño de fuente a 1.25 rem */
 }
 
-.brand-name {
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--dark);
+.brand-name { /* Estilos para la clase "brand-name" */
+    font-weight: 700; /* Establece el peso de la fuente a 700 (negrita) */
+    font-size: 1.25rem; /* Establece el tamaño de fuente a 1.25 rem */
+    color: var(--dark); /* Establece el color del texto usando la variable de color oscuro */
 }
 
-.menu {
-    display: flex;
-    gap: 1.5rem;
+.menu { /* Estilos para la clase "menu" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    gap: 1.5rem; /* Establece un espacio de 1.5 rem entre los elementos hijos */
 }
 
-.menu a {
-    color: var(--gray);
-    text-decoration: none;
-    font-weight: 500;
-    transition: color 0.2s;
+.menu a { /* Estilos para los enlaces dentro de la clase "menu" */
+    color: var(--gray); /* Establece el color del texto usando la variable de color gris */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    font-weight: 500; /* Establece el peso de la fuente a 500 */
+    transition: color 0.2s; /* Aplica una transición suave al color durante 0.2 segundos */
 }
 
-.menu a:hover {
-    color: var(--primary);
+.menu a:hover { /* Estilos para los enlaces al pasar el mouse sobre ellos */
+    color: var(--primary); /* Cambia el color del texto al color primario */
 }
 
 /* Hero */
-.hero {
-    background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0.9)), url('static/images/imagen.png');
-    background-size: cover;
-    background-position: center;
-    color: var(--white);
-    padding: 6rem 1.5rem;
-    text-align: center;
+.hero { /* Estilos para la clase "hero" */
+    background: linear-gradient(rgba(37, 99, 235, 0.9), rgba(37, 99, 235, 0.9)), url('static/images/imagen.png'); /* Aplica un fondo con un degradado y una imagen */
+    background-size: cover; /* Asegura que la imagen de fondo cubra todo el contenedor */
+    background-position: center; /* Centra la imagen de fondo */
+    color: var(--white); /* Establece el color del texto usando la variable de color blanco */
+    padding: 6rem 1.5rem; /* Establece un padding de 6 rem arriba y abajo, y 1.5 rem a los lados */
+    text-align: center; /* Centra el texto */
 }   
 
-.hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+.hero-content { /* Estilos para la clase "hero-content" */
+    max-width: 800px; /* Establece un ancho máximo de 800 píxeles */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
 }
 
-.hero h1 {
-    margin-bottom: 1.5rem;
+.hero h1 { /* Estilos específicos para h1 dentro de la clase "hero" */
+    margin-bottom: 1.5rem; /* Establece un margen inferior de 1.5 rem */
 }
 
-.hero p {
-    font-size: 1.25rem;
-    margin-bottom: 2rem;
-    opacity: 0.9;
+.hero p { /* Estilos para los párrafos dentro de la clase "hero" */
+    font-size: 1.25rem; /* Establece el tamaño de fuente a 1.25 rem */
+    margin-bottom: 2rem; /* Establece un margen inferior de 2 rem */
+    opacity: 0.9; /* Establece la opacidad del texto a 0.9 */
 }
 
-.cta-buttons {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+.cta-buttons { /* Estilos para la clase "cta-buttons" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    gap: 1rem; /* Establece un espacio de 1 rem entre los botones */
+    justify-content: center; /* Centra los botones horizontalmente */
 }
 
 /* Botones */
-.btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: var(--radius);
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.2s;
-    text-align: center;
+.btn { /* Estilos para la clase "btn" */
+    display: inline-block; /* Hace que el botón se comporte como un bloque en línea */
+    padding: 0.75rem 1.5rem; /* Establece un padding de 0.75 rem arriba y abajo, y 1.5 rem a los lados */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    font-weight: 600; /* Establece el peso de la fuente a 600 */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: all 0.2s; /* Aplica una transición suave a todas las propiedades durante 0.2 segundos */
+    text-align: center; /* Centra el texto dentro del botón */
 }
 
-.btn.primary {
-    background-color: #fff;
-    color: var(--primary);
+.btn.primary { /* Estilos para los botones con la clase "primary" */
+    background-color: #fff; /* Establece el color de fondo a blanco */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.btn.primary:hover {
-    background-color: rgba(255, 255, 255, 0.9);
-    transform: translateY(-2px);
+.btn.primary:hover { /* Estilos para los botones primarios al pasar el mouse sobre ellos */
+    background-color: rgba(255, 255, 255, 0.9); /* Cambia el color de fondo a blanco con un poco de transparencia */
+    transform: translateY(-2px); /* Mueve el botón hacia arriba 2 píxeles */
 }
 
-.btn.secondary {
-    background-color: transparent;
-    color: var(--white);
-    border: 2px solid var(--white);
+.btn.secondary { /* Estilos para los botones con la clase "secondary" */
+    background-color: transparent; /* Establece el color de fondo como transparente */
+    color: var(--white); /* Establece el color del texto usando la variable de color blanco */
+    border: 2px solid var(--white); /* Establece un borde blanco de 2 píxeles */
 }
 
-.btn.secondary:hover {
-    background-color: rgba(255, 255, 255, 0.1);
-    transform: translateY(-2px);
+.btn.secondary:hover { /* Estilos para los botones secundarios al pasar el mouse sobre ellos */
+    background-color: rgba(255, 255, 255, 0.1); /* Cambia el color de fondo a blanco con un poco de transparencia */
+    transform: translateY(-2px); /* Mueve el botón hacia arriba 2 píxeles */
 }
 
 /* Sección Problema */
-.problem-content {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
+.problem-content { /* Estilos para la clase "problem-content" */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    gap: 3rem; /* Establece un espacio de 3 rem entre las columnas */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
 }
 
-.problem-text h3 {
-    margin-bottom: 1rem;
-    color: var(--primary);
+.problem-text h3 { /* Estilos para h3 dentro de la clase "problem-text" */
+    margin-bottom: 1rem; /* Establece un margen inferior de 1 rem */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.problem-text p {
-    margin-bottom: 1.5rem;
+.problem-text p { /* Estilos para los párrafos dentro de la clase "problem-text" */
+    margin-bottom: 1.5rem; /* Establece un margen inferior de 1.5 rem */
 }
 
-.problem-image img {
-    width: 100%;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+.problem-image img { /* Estilos para las imágenes dentro de la clase "problem-image" */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
 }
 
-.ods-cards {
-    display: flex;
-    gap: 1rem;
-    margin-top: 2rem;
+.ods-cards { /* Estilos para la clase "ods-cards" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    gap: 1rem; /* Establece un espacio de 1 rem entre las tarjetas */
+    margin-top: 2rem; /* Establece un margen superior de 2 rem */
 }
 
-.ods-card {
-    padding: 5px;
-    border-radius: 10px;
-    background-color: #3489da;
-    color: white;
-    text-align: center;
-    flex: 1;
+.ods-card { /* Estilos para la clase "ods-card" */
+    padding: 5px; /* Establece un padding de 5 píxeles */
+    border-radius: 10px; /* Aplica un radio de borde de 10 píxeles */
+    background-color: #3489da; /* Establece el color de fondo a un tono azul */
+    color: white; /* Establece el color del texto a blanco */
+    text-align: center; /* Centra el texto */
+    flex: 1; /* Permite que la tarjeta crezca para llenar el espacio disponible */
 }
-
 
 /* Sección Solución */
-.solution-features {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
+.solution-features { /* Estilos para la clase "solution-features" */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas que se ajustan automáticamente con un tamaño mínimo de 250 píxeles */
+    gap: 2rem; /* Establece un espacio de 2 rem entre las columnas */
+    margin-bottom: 3rem; /* Establece un margen inferior de 3 rem */
 }
 
-.feature-card {
-    background-color: var(--white);
-    padding: 2rem 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    text-align: center;
-    transition: transform 0.2s;
+.feature-card { /* Estilos para la clase "feature-card" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    padding: 2rem 1.5rem; /* Establece un padding de 2 rem arriba y abajo, y 1.5 rem a los lados */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
+    text-align: center; /* Centra el texto */
+    transition: transform 0.2s; /* Aplica una transición suave a la transformación durante 0.2 segundos */
 }
 
-.feature-card:hover {
-    transform: translateY(-5px);
+.feature-card:hover { /* Estilos para las tarjetas de características al pasar el mouse sobre ellas */
+    transform: translateY(-5px); /* Mueve la tarjeta hacia arriba 5 píxeles */
 }
 
-.feature-icon {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+.feature-icon { /* Estilos para la clase "feature-icon" */
+    font-size: 2.5rem; /* Establece el tamaño de fuente a 2.5 rem */
+    margin-bottom: 1rem; /* Establece un margen inferior de 1 rem */
 }
 
-.feature-card h3 {
-    margin-bottom: 0.75rem;
-    color: var(--primary);
+.feature-card h3 { /* Estilos para h3 dentro de la clase "feature-card" */
+    margin-bottom: 0.75rem; /* Establece un margen inferior de 0.75 rem */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.solution-demo {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    align-items: center;
-    margin-top: 3rem;
+.solution-demo { /* Estilos para la clase "solution-demo" */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    gap: 3rem; /* Establece un espacio de 3 rem entre las columnas */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    margin-top: 3rem; /* Establece un margen superior de 3 rem */
 }
 
-.solution-demo img {
-    width: 100%;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+.solution-demo img { /* Estilos para las imágenes dentro de la clase "solution-demo" */
+    width: 100%; /* Establece el ancho de la imagen al 100% del contenedor */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
 }
 
-.demo-text h3 {
-    margin-bottom: 1.5rem;
-    color: var(--primary);
+.demo-text h3 { /* Estilos para h3 dentro de la clase "demo-text" */
+    margin-bottom: 1.5rem; /* Establece un margen inferior de 1.5 rem */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.demo-text ol {
-    list-style-position: inside;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+.demo-text ol { /* Estilos para listas ordenadas dentro de la clase "demo-text" */
+    list-style-position: inside; /* Coloca los números de la lista dentro del contenedor */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 1rem; /* Establece un espacio de 1 rem entre los elementos de la lista */
 }
 
-.demo-text li {
-    padding: 0.75rem;
-    background-color: var(--white);
-    border-radius: var(--radius);
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+.demo-text li { /* Estilos para los elementos de la lista dentro de la clase "demo-text" */
+    padding: 0.75rem; /* Establece un padding de 0.75 rem */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Aplica una sombra con desplazamiento y opacidad */
 }
 
 /* Sección Tecnologías */
-.tech-columns {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+.tech-columns { /* Estilos para la clase "tech-columns" */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: 1fr 1fr; /* Crea dos columnas de igual tamaño */
+    gap: 3rem; /* Establece un espacio de 3 rem entre las columnas */
 }
 
-.tech-column {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
+.tech-column { /* Estilos para la clase "tech-column" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    padding: 2rem; /* Establece un padding de 2 rem en todos los lados */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
 }
 
-.tech-column h3 {
-    margin-bottom: 1.5rem;
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--primary);
+.tech-column h3 { /* Estilos para h3 dentro de la clase "tech-column" */
+    margin-bottom: 1.5rem; /* Establece un margen inferior de 1.5 rem */
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    gap: 0.5rem; /* Establece un espacio de 0.5 rem entre los elementos hijos */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.tech-column ul {
-    list-style-position: inside;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
+.tech-column ul { /* Estilos para listas dentro de la clase "tech-column" */
+    list-style-position: inside; /* Coloca los puntos de la lista dentro del contenedor */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 0.75rem; /* Establece un espacio de 0.75 rem entre los elementos de la lista */
 }
 
-.tech-column li {
-    padding: 0.5rem 0;
+.tech-column li { /* Estilos para los elementos de la lista dentro de la clase "tech-column" */
+    padding: 0.5rem 0; /* Establece un padding de 0.5 rem arriba y abajo */
 }
 
 /* Sección Equipo */
-.team-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 1.5rem;
-    margin-bottom: 3rem;
+.team-grid { /* Estilos para la clase "team-grid" */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Crea columnas que se ajustan automáticamente con un tamaño mínimo de 200 píxeles */
+    gap: 1.5rem; /* Establece un espacio de 1.5 rem entre las columnas */
+    margin-bottom: 3rem; /* Establece un margen inferior de 3 rem */
 }
 
-.team-card {
-    background-color: var(--white);
-    padding: 1.5rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    text-align: center;
+.team-card { /* Estilos para la clase "team-card" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    padding: 1.5rem; /* Establece un padding de 1.5 rem en todos los lados */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
+    text-align: center; /* Centra el texto dentro de la tarjeta */
 }
 
-.team-role {
-    font-weight: 600;
-    color: var(--primary);
-    margin-bottom: 1rem;
+.team-role { /* Estilos para la clase "team-role" */
+    font-weight: 600; /* Establece el peso de la fuente a 600 */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
+    margin-bottom: 1rem; /* Establece un margen inferior de 1 rem */
 }
 
-.team-members {
-    line-height: 1.8;
+.team-members { /* Estilos para la clase "team-members" */
+    line-height: 1.8; /* Establece la altura de línea a 1.8 para mejorar la legibilidad */
 }
 
-.conclusion {
-    background-color: var(--white);
-    padding: 2rem;
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    max-width: 800px;
-    margin: 0 auto;
+.conclusion { /* Estilos para la clase "conclusion" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    padding: 2rem; /* Establece un padding de 2 rem en todos los lados */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    box-shadow: var(--shadow); /* Aplica sombra usando la variable de sombra definida */
+    max-width: 800px; /* Establece un ancho máximo de 800 píxeles */
+    margin: 0 auto; /* Centra la conclusión horizontalmente */
 }
 
-.conclusion h3 {
-    color: var(--primary);
-    margin-bottom: 1rem;
-    text-align: center;
+.conclusion h3 { /* Estilos para h3 dentro de la clase "conclusion" */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
+    margin-bottom: 1rem; /* Establece un margen inferior de 1 rem */
+    text-align: center; /* Centra el texto */
 }
 
 /* Formulario de contacto */
-#contactForm {
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+#contactForm { /* Estilos para el formulario de contacto con ID "contactForm" */
+    max-width: 600px; /* Establece un ancho máximo de 600 píxeles */
+    margin: 0 auto; /* Centra el formulario horizontalmente */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 1rem; /* Establece un espacio de 1 rem entre los elementos del formulario */
 }
 
-.form-group {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.form-group { /* Estilos para la clase "form-group" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 0.5rem; /* Establece un espacio de 0.5 rem entre los elementos hijos */
 }
 
-input,
-textarea {
-    padding: 0.75rem 1rem;
-    border: 1px solid var(--light-gray);
-    border-radius: var(--radius);
-    font-family: inherit;
-    font-size: 1rem;
+input, /* Estilos para los elementos de entrada */
+textarea { /* Estilos para el área de texto */
+    padding: 0.75rem 1rem; /* Establece un padding de 0.75 rem arriba y abajo, y 1 rem a los lados */
+    border: 1px solid var(--light-gray); /* Establece un borde de 1 píxel usando la variable de color gris claro */
+    border-radius: var(--radius); /* Aplica un radio de borde usando la variable de radio */
+    font-family: inherit; /* Hereda la fuente del elemento padre */
+    font-size: 1rem; /* Establece el tamaño de fuente a 1 rem */
 }
 
-textarea {
-    min-height: 150px;
-    resize: vertical;
+textarea { /* Estilos específicos para el área de texto */
+    min-height: 150px; /* Establece una altura mínima de 150 píxeles */
+    resize: vertical; /* Permite que el área de texto se redimensione verticalmente */
 }
 
-.form-note {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 0.9rem;
+.form-note { /* Estilos para la clase "form-note" */
+    text-align: center; /* Centra el texto */
+    margin-top: 1rem; /* Establece un margen superior de 1 rem */
+    font-size: 0.9rem; /* Establece el tamaño de fuente a 0.9 rem */
 }
 
 /* Footer */
-footer {
-    background-color: var(--dark);
-    color: var(--white);
-    padding: 3rem 1.5rem 1.5rem;
+footer { /* Estilos para el pie de página */
+    background-color: var(--dark); /* Establece el color de fondo usando la variable de color oscuro */
+    color: var(--white); /* Establece el color del texto usando la variable de color blanco */
+    padding: 3rem 1.5rem 1.5rem; /* Establece un padding de 3 rem arriba, 1.5 rem a los lados y 1.5 rem abajo */
 }
 
-.footer-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 2rem;
+.footer-content { /* Estilos para la clase "footer-content" */
+    max-width: 1200px; /* Establece un ancho máximo de 1200 píxeles */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+    display: grid; /* Utiliza grid para el diseño */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Crea columnas que se ajustan automáticamente con un tamaño mínimo de 250 píxeles */
+    gap: 2rem; /* Establece un espacio de 2 rem entre las columnas */
+    margin-bottom: 2rem; /* Establece un margen inferior de 2 rem */
 }
 
-.footer-brand {
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-    margin-bottom: 1rem;
+.footer-brand { /* Estilos para la clase "footer-brand" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    align-items: center; /* Alinea los elementos hijos verticalmente al centro */
+    gap: 0.75rem; /* Establece un espacio de 0.75 rem entre los elementos hijos */
+    margin-bottom: 1rem; /* Establece un margen inferior de 1 rem */
 }
 
-.footer-brand .logo {
-    background-color: var(--white);
-    color: var(--primary);
+.footer-brand .logo { /* Estilos para la clase "logo" dentro de "footer-brand" */
+    background-color: var(--white); /* Establece el color de fondo usando la variable de color blanco */
+    color: var(--primary); /* Establece el color del texto usando la variable de color primario */
 }
 
-.footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+.footer-links { /* Estilos para la clase "footer-links" */
+    display: flex; /* Utiliza flexbox para el diseño */
+    flex-direction: column; /* Organiza los elementos en una columna */
+    gap: 0.5rem; /* Establece un espacio de 0.5 rem entre los enlaces */
 }
 
-.footer-links a {
-    color: var(--light-gray);
-    text-decoration: none;
-    transition: color 0.2s;
+.footer-links a { /* Estilos para los enlaces dentro de la clase "footer-links" */
+    color: var(--light-gray); /* Establece el color del texto usando la variable de color gris claro */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    transition: color 0.2s; /* Aplica una transición suave al color durante 0.2 segundos */
 }
 
-.footer-links a:hover {
-    color: var(--white);
+.footer-links a:hover { /* Estilos para los enlaces al pasar el mouse sobre ellos */
+    color: var(--white); /* Cambia el color del texto al color blanco */
 }
 
-.footer-credits p {
-    color: var(--light-gray);
-    font-size: 0.9rem;
-    margin-bottom: 0.5rem;
+.footer-credits p { /* Estilos para los párrafos dentro de la clase "footer-credits" */
+    color: var(--light-gray); /* Establece el color del texto usando la variable de color gris claro */
+    font-size: 0.9rem; /* Establece el tamaño de fuente a 0.9 rem */
+    margin-bottom: 0.5rem; /* Establece un margen inferior de 0.5 rem */
 }
 
-.footer-copyright {
-    text-align: center;
-    padding-top: 1.5rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    color: var(--light-gray);
-    font-size: 0.9rem;
+.footer-copyright { /* Estilos para la clase "footer-copyright" */
+    text-align: center; /* Centra el texto */
+    padding-top: 1.5rem; /* Establece un padding superior de 1.5 rem */
+    border-top: 1px solid rgba(255, 255, 255, 0.1); /* Aplica un borde superior con un color blanco semitransparente */
+    color: var(--light-gray); /* Establece el color del texto usando la variable de color gris claro */
+    font-size: 0.9rem; /* Establece el tamaño de fuente a 0.9 rem */
 }
 
 /* Responsive */
-@media (max-width: 768px) {
+@media (max-width: 768px) { /* Estilos para pantallas con un ancho máximo de 768 píxeles */
 
-    .problem-content,
-    .solution-demo,
-    .tech-columns {
-        grid-template-columns: 1fr;
+    .problem-content, /* Selecciona la clase "problem-content" */
+    .solution-demo, /* Selecciona la clase "solution-demo" */
+    .tech-columns { /* Selecciona la clase "tech-columns" */
+        grid-template-columns: 1fr; /* Cambia a una sola columna */
     }
 
-    .nav-inner {
-        flex-direction: column;
-        gap: 1rem;
+    .nav-inner { /* Estilos para la clase "nav-inner" */
+        flex-direction: column; /* Organiza los elementos en una columna */
+        gap: 1rem; /* Establece un espacio de 1 rem entre los elementos hijos */
     }
 
-    .menu {
-        flex-wrap: wrap;
-        justify-content: center;
+    .menu { /* Estilos para la clase "menu" */
+        flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas */
+        justify-content: center; /* Centra los elementos horizontalmente */
     }
 
-    .hero {
-        padding: 4rem 1.5rem;
+    .hero { /* Estilos para la clase "hero" */
+        padding: 4rem 1.5rem; /* Establece un padding de 4 rem arriba y abajo, y 1.5 rem a los lados */
     }
 
-    .hero h1 {
-        font-size: 2rem;
+    .hero h1 { /* Estilos para h1 dentro de la clase "hero" */
+        font-size: 2rem; /* Establece el tamaño de fuente a 2 rem */
     }
 
-    .cta-buttons {
-        flex-direction: column;
-        align-items: center;
+    .cta-buttons { /* Estilos para la clase "cta-buttons" */
+        flex-direction: column; /* Organiza los botones en una columna */
+        align-items: center; /* Centra los botones horizontalmente */
     }
 
-    .section {
-        padding: 3rem 1.5rem;
+    .section { /* Estilos para la clase "section" */
+        padding: 3rem 1.5rem; /* Establece un padding de 3 rem arriba y abajo, y 1.5 rem a los lados */
     }
 }
 
-.footer-credits a {
-    text-decoration: none;
-    color: #fff;
+.footer-credits a { /* Estilos para los enlaces dentro de la clase "footer-credits" */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    color: #fff; /* Establece el color del texto a blanco */
 }
